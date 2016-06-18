@@ -1,0 +1,24 @@
+<div ng-controller="indexCtrl">
+	<table class="table table-index">
+		<thead>
+			<tr>
+				<td class="col-sound col-sm">S</td>
+				<td class="col-bookmark col-sm">B</td>
+				<td class="col-title">Title</td>
+				<td class="col-juz col-sm">J</td>
+				<td class="col-sajadah col-sm">SH</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="item in surah">
+				<td class="col-sound col-sm">S</td>
+				<td class="col-bookmark col-sm"></td>
+				<td class="col-title">
+					<a href="#/surah/{{ item.surah_id }}">{{ item.title }}</a>
+				</td>
+				<td class="col-juz col-sm"></td>
+				<td class="col-sajadah col-sm"></td>
+			</tr>
+		</tbody>
+	</table>				
+</div>

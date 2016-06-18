@@ -1,0 +1,21 @@
+<?php 
+	$rows = array(
+				'',
+				'',
+				'',
+				'Yang menguasai di Hari Pembalasan.',
+				'Hanya Engkaulah yang kami sembah, dan hanya kepada Engkaulah kami meminta pertolongan.',
+				'Tunjukilah kami jalan yang lurus,',
+				'(yaitu) Jalan orang-orang yang telah Engkau beri nikmat kepada mereka; bukan (jalan) mereka yang dimurkai dan bukan (pula jalan) mereka yang sesat.'
+			);
+?>
+<div ng-controller="SurahCtrl">
+	<table class="table table-surah">
+		<tbody>
+			<tr ng-repeat="item in ayah">
+				<td class="col-num col-sm">{{ item.ayah_id }}</td>
+				<td>{{ item.verse }}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
