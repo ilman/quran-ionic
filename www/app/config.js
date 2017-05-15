@@ -1,4 +1,4 @@
-var quranApp = angular.module('quranApp', ['ui.router']);
+var quranApp = angular.module('quranApp', ['ui.router', 'ngCordova']);
 
 quranApp.directive('includeReplace', function () {
     return {
